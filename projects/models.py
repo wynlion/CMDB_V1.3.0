@@ -83,3 +83,17 @@ class Member(models.Model):
     class Meta:
         verbose_name = '小组成员'
         verbose_name_plural = "小组成员"
+
+
+class Driver(models.Model):
+    """司机信息"""
+
+    name = models.CharField('司机姓名', max_length=64, unique=True)
+    mobile_numbers = models.CharField('电话号码', max_length=64, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = '司机信息'
+        verbose_name_plural = '司机信息'
