@@ -31,3 +31,11 @@ class Staffs(models.Model):
         verbose_name = '人事管理'
         verbose_name_plural = '人事管理'
 
+
+class Driver(models.Model):
+    """司机名单"""
+
+    driver_name_choice = (
+
+    )
+
